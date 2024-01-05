@@ -10,7 +10,7 @@ const {
 
 router.route('/').get(getBootCamps).post(createBootCamp);
 router
-  .route('/;id')
+  .route('/:id')
   .get(getBootCamp)
   .put(updateBootCamp)
   .delete(deleteBootCamp);
